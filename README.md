@@ -2,19 +2,16 @@
 # Use case: plug into target network switch via ethernet, connect to target via wifi or onion hidden service
 # Tested on OrangePi Zero; should work on anything
 
+# The usual
 apt update && apt upgrade -y
-
 reboot
 
-install tor:
-# add apt entries
-
+# Install tor
 echo < _EOF >> /etc/apt/sources.list
 deb https://deb.torproject.org/torproject.org xenial main
 deb-src https://deb.torproject.org/torproject.org xenial main
 _EOF
 
-# Install tor
 apt install apt-transport-https
 apt-get install deb.torproject.org-keyring tor torsocks
 systemctl stop tor
