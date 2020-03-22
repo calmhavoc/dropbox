@@ -47,7 +47,7 @@ hostnamectl set-hostname $hostname
 # add user
 username=james  
 adduser --disabled-password --gecos "" $username  
-usermod -aG sudo james  
+usermod -aG sudo $username  
 passwd james  
 
 # Add ssh key
