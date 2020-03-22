@@ -12,8 +12,7 @@ deb https://deb.torproject.org/torproject.org xenial main
 deb-src https://deb.torproject.org/torproject.org xenial main
 _EOF
 
-apt install apt-transport-https
-apt-get install deb.torproject.org-keyring tor torsocks
+apt install apt-transport-https deb.torproject.org-keyring tor torsocks
 systemctl stop tor
 
 # Modify Tor
