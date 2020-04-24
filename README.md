@@ -51,5 +51,5 @@ usermod -aG sudo $username
 passwd james  
 
 # Add ssh key
-# Modify ssh-config to only allow key
-# disable user: chsh -s /bin/false ubuntu
+Modify ssh-config to only allow key
+disable user: chsh -s /bin/false ubuntu
